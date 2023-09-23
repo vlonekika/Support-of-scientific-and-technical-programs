@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1172</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Times New Roman</family>
+    <pointsize>10</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Сопровождение научно-технических программ</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1172</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="viewing_data">
+    <property name="title">
+     <string>Просмотр данных</string>
+    </property>
+    <addaction name="nir_info"/>
+    <addaction name="ntp_info"/>
+    <addaction name="vuz_info"/>
+   </widget>
+   <widget class="QMenu" name="reoirting_forms">
+    <property name="title">
+     <string>Отчетные формы</string>
+    </property>
+    <addaction name="nir_distrib"/>
+    <addaction name="ntp_distrib"/>
+    <addaction name="pattern_nir"/>
+   </widget>
+   <widget class="QMenu" name="finance_nir">
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Финансирование НИР</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="reference">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+   </widget>
+   <addaction name="viewing_data"/>
+   <addaction name="reoirting_forms"/>
+   <addaction name="finance_nir"/>
+   <addaction name="reference"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="nir_info">
+   <property name="text">
+    <string>Информация по проектам/НИР </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="ntp_info">
+   <property name="text">
+    <string>Информация по научно-техническим программам</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="vuz_info">
+   <property name="text">
+    <string>Информация по вузам</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="nir_distrib">
+   <property name="text">
+    <string>Распределение НИР по вузам</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="ntp_distrib">
+   <property name="text">
+    <string>Распределение по НТП</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="pattern_nir">
+   <property name="text">
+    <string>Характер НИР</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
