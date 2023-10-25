@@ -5,9 +5,11 @@ from PyQt5.QtSql import QSqlDatabase, QSqlQuery
 
 Ui_Info_Form, QInfo_Form = loadUiType('info_form.ui')
 
+
 class Info_Form(QMainWindow, Ui_Info_Form):
 
     def __init__(self, db_name, tb_name, request):
+
         super().__init__()
         self.setupUi(self) # установка интерфейса
         self.db_load(db_name, tb_name, request) #загрузка БД
@@ -19,6 +21,7 @@ class Info_Form(QMainWindow, Ui_Info_Form):
             db_name:str - название БД
             tb_name:str - название таблицы
             request:str - запрос"""
+
 
         db = QSqlDatabase.addDatabase("QSQLITE")
         db.setDatabaseName(db_name)
