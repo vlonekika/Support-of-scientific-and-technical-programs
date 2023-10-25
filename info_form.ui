@@ -42,6 +42,9 @@
      <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
        <widget class="QTableWidget" name="table">
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
         <property name="rowCount">
          <number>0</number>
         </property>
@@ -206,6 +209,22 @@
          </size>
         </property>
        </spacer>
+      </item>
+      <item>
+       <widget class="QComboBox" name="sort_com">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>180</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QPushButton" name="sort">
