@@ -27,8 +27,8 @@ class BaseForm(QMainWindow, Ui_BaseForm):
         central_layout = QVBoxLayout(central_widget)
         central_layout.addWidget(self.stacked_widget)
         self.setCentralWidget(central_widget)
-        line = """  Все должно быть простым, насколько возможно, но нe проще.\
-                    \n\n\t\t\t Приписывается Альберту Эйнштейну"""
+        line = """  """
+        #Все должно быть простым, насколько возможно, но нe проще.\\n\n\t\t\t Приписывается Альберту Эйнштейну
         self.main_label = QLabel(line, self)
         self.main_label.setAlignment(Qt.AlignCenter)
 
@@ -42,12 +42,18 @@ class BaseForm(QMainWindow, Ui_BaseForm):
         self.stacked_widget.addWidget(self.vuz_table)
 
     def open_nir_info(self):
+        self.ntp_proj_table = Nir_Info()
+        self.stacked_widget.addWidget(self.ntp_proj_table)
         self.stacked_widget.setCurrentWidget(self.ntp_proj_table)
 
     def open_ntp_info(self):
+        self.ntp_prog_table = Ntp_Info()
+        self.stacked_widget.addWidget(self.ntp_prog_table)
         self.stacked_widget.setCurrentWidget(self.ntp_prog_table)
 
     def open_vuz_info(self):
+        self.vuz_table = Vuz_Info()
+        self.stacked_widget.addWidget(self.vuz_table)
         self.stacked_widget.setCurrentWidget(self.vuz_table)
 
 

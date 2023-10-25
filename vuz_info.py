@@ -1,7 +1,7 @@
-from info_form import Info_Form
+from base_form import Base_Form
 
 
-class Vuz_Info(Info_Form):
+class Vuz_Info(Base_Form):
 
     def __init__(self):
         self.__db = "SUBDlab.db"
@@ -10,7 +10,7 @@ class Vuz_Info(Info_Form):
         # возможно тут стоит поменять порядок столбцов и укоротить названия
         self.__request = f"""SELECT codvuz AS "код вуза",
                                     z1 AS "наименование вуза",
-                                    z1full AS "полное юридическое наименование вуза",
+                                    z1full AS "юридическое наименование вуза",
                                     z2 AS "сокращенное наименование",
                                     region AS "федеральный окру",
                                     city AS "город",
